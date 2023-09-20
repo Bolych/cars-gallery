@@ -164,19 +164,25 @@ export const MainGallery: React.FC = () => {
 												<Typography variant="h6" component="div" sx={{flexGrow: 1}}>
 														Car Gallery
 												</Typography>
-												<NavLink to="/add-car">
-														<Button variant="contained" color="primary" fullWidth>
-																Add Car
-														</Button>
-												</NavLink>
+
 										</Toolbar>
 								</AppBar>
 						</Box>
 						<Container>
 								<Grid container spacing={3}>
+
 										<Grid item xs={12} sm={4} className="left-bar">
 
 												<Box my={4}>
+														<Box marginBottom='1em'>
+																<NavLink to="/add-car">
+																		<Button variant="contained" color="primary" fullWidth>
+																				Adding car feature
+																		</Button>
+																</NavLink>
+														</Box>
+
+
 														<TextField
 																label="Filter by Brand"
 																value={brandFilter}

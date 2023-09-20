@@ -5,7 +5,7 @@ import {
 		useNavigate,
 } from 'react-router-dom';
 import {
-		Button, Container, Card, CardMedia, CardContent, Typography, CircularProgress
+		Button, Container, Card, CardMedia, CardContent, Typography, CircularProgress, AppBar, Toolbar, IconButton
 } from '@mui/material';
 import {Car} from "../data/types";
 
@@ -29,8 +29,28 @@ export const CarDetails: React.FC = () => {
 
 		return (
 				<div>
+
+						<AppBar position="static">
+								<Toolbar>
+										<IconButton
+												size="large"
+												edge="start"
+												color="inherit"
+												aria-label="menu"
+												sx={{mr: 2}}>
+										</IconButton>
+										<Typography variant="h6" component="div" sx={{flexGrow: 1}}>
+										Car overview
+										</Typography>
+
+								</Toolbar>
+						</AppBar>
 						<Container>
+
+
 								{car ? (
+
+
 										<Card style={{marginTop: '1em', paddingBottom: '2em'}} variant="outlined">
 												<CardMedia
 														className='car-detailed-item'
