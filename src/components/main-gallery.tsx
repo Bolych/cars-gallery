@@ -70,6 +70,7 @@ export const MainGallery: React.FC = () => {
 				window.scrollTo({ top: 0, behavior: 'smooth' });
 		}, [getCars, currentPage]);
 
+// @ts-ignore
 		const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
 				setCurrentPage(page);
 		};
