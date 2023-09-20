@@ -29,7 +29,6 @@ export const CarDetails: React.FC = () => {
 
 		return (
 				<div>
-
 						<AppBar position="static">
 								<Toolbar>
 										<IconButton
@@ -46,11 +45,7 @@ export const CarDetails: React.FC = () => {
 								</Toolbar>
 						</AppBar>
 						<Container>
-
-
 								{car ? (
-
-
 										<Card style={{marginTop: '1em', paddingBottom: '2em'}} variant="outlined">
 												<CardMedia
 														className='car-detailed-item'
@@ -81,7 +76,6 @@ export const CarDetails: React.FC = () => {
 								) : (
 										<CircularProgress/>
 								)}
-
 						</Container>
 				</div>
 		);
