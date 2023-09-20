@@ -1,0 +1,31 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.car-item {
+background-color: #a2a3b4;
+  border-radius: 8px;
+  border: 1px solid transparent;
+    font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 20px
+}
+
+@media (min-width: 768px) {
+  .left-bar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-detailed-item {
+    height: 100%;
+  }
+}
