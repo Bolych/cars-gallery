@@ -131,7 +131,6 @@ export const MainGallery: React.FC = () => {
 								break;
 						}
 				}
-
 				return sortedCars;
 		};
 
@@ -164,15 +163,12 @@ export const MainGallery: React.FC = () => {
 												<Typography variant="h6" component="div" sx={{flexGrow: 1}}>
 														Car Gallery
 												</Typography>
-
 										</Toolbar>
 								</AppBar>
 						</Box>
 						<Container>
 								<Grid container spacing={3}>
-
 										<Grid item xs={12} sm={4} className="left-bar">
-
 												<Box my={4}>
 														<Box marginBottom='1em'>
 																<NavLink to="/add-car">
@@ -181,8 +177,6 @@ export const MainGallery: React.FC = () => {
 																		</Button>
 																</NavLink>
 														</Box>
-
-
 														<TextField
 																label="Filter by Brand"
 																value={brandFilter}
